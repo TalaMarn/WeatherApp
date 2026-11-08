@@ -50,7 +50,7 @@ def save_search(city, temperature, description):
         VALUES (?, ?, ?)
 """, (city, temperature, description))
 
-    conn.comit()
+    conn.commit()
     conn.close()
 
     print(f"Saved weather search for {city}")
